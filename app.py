@@ -52,7 +52,7 @@ def translate_text(text, target_language):
 def index():
     return f"<center><h1>Flask App deployment on AZURE</h1></center"
 
-@app.route("/get_response", methods=["POST"])
+@app.route("/getdata", methods=["POST"])
 @cross_origin()
 def get_response():
     url = OPENAI_URL
